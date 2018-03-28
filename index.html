@@ -13,6 +13,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Title -->
+  <header>
+    <h1>Pixel Art Maker</h1>
+  </header>
+
+  <!-- Inputs Sections -->
+  <section>
+    <h2>Select Grid Size</h2>
+    <form>
+      Grid Height:
+      <input type="number" name="gridHeight" id="inputGridHeight" min="2" value="2">
+      Grid Width:
+      <input type="number" name="gridWidth" id="inputGridWidth" min="2" value="2">
+      <input type="submit" value="Create Canvas">
+    </form>
+
+    <h2>Select a Color</h2>
+    <input type="color" id="colorPicker">
+  </section>
+
+  <!-- Pixel Canvas -->
+  <section>
+    <h2>Canvas</h2>
+    <table id="pixelCanvas"></table>
+  </section>
 
   <!-- Link to JS -->
   <script src="js/app.js"></script>
