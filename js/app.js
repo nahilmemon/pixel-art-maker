@@ -33,7 +33,8 @@ function makeGrid() {
 const createCanvasInput = document.querySelector('#createCanvasInput');
 createCanvasInput.addEventListener('click', makeGrid);
 
-// When a table cell gets clicked, toggle the background-color class
+// When a table cell gets clicked, change the background color of this table
+// cell based on the color picker's current value
 document.querySelector('#pixelCanvas').addEventListener('click', function (event) {
-  event.target.classList.toggle('background-color');
+  event.target.style.backgroundColor = document.querySelector('#colorPicker').value;
 });
