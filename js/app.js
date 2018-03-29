@@ -28,3 +28,7 @@ function makeGrid() {
   // Add the table contents fragment to the table
   canvasTable.appendChild(fragment);
 }
+
+// Call the makeGrid() function when the 'Create Canvas' input gets clicked
+const createCanvasInput = document.querySelector('#createCanvasInput');
+createCanvasInput.addEventListener('click', makeGrid);
