@@ -1,3 +1,45 @@
+/* Make everything a border-box*/
+* {
+  box-sizing: border-box;
+}
+
+/* Inputs */
+label {
+  font-weight: 700;
+}
+
+input {
+  background-color: #fff;
+  color: #da3f7c;
+  border: 2px solid #da3f7c;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+input[type=color] {
+  padding: 1px 2px;
+  height: 46px;
+  width: 48px;
+}
+
+input[type=number] {
+  width: 5em;
+  text-align: right;
+}
+
+@media screen and (max-width: 700px) {
+  input {
+    padding: 0;
+    min-height: 48px;
+    min-width: 48px;
+  }
+  input[type=button] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Pixel Canvas */
 table,
 tr,
 td {
@@ -15,4 +57,65 @@ tr {
 
 td {
   width: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  tr {
+    height: 50px;
+  }
+
+  td {
+    width: 50px;
+  }
+}
+
+/* Typography */
+body {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 1em;
+  line-height: 1.25;
+  text-align: center;
+  color: #da3f7c;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  line-height: 1.25;
+  margin: 0.3em 0 0.1em;
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615;
+  margin: 0.25em;
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 1em;
+    line-height: 1.375;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.05;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
 }

@@ -10,6 +10,10 @@
   <!-- Title -->
   <title>Pixel Art Maker</title>
   <!-- Link to CSS -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700" rel="stylesheet">
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,14 +26,16 @@
   <section>
     <h2>Select Grid Size</h2>
     <form>
-      Grid Height:
+      <label for="inputGridHeight">Grid Height:</label>
       <input type="number" name="gridHeight" id="inputGridHeight" min="2" value="2">
-      Grid Width:
+      <br>
+      <label for="inputGridWidth">Grid Width:&nbsp;</label>
       <input type="number" name="gridWidth" id="inputGridWidth" min="2" value="2">
+      <br>
       <input type="button" value="Create Canvas" id="createCanvasInput">
     </form>
 
-    <h2>Select a Color</h2>
+    <h2>Select Color</h2>
     <input type="color" id="colorPicker">
   </section>
 
