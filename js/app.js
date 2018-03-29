@@ -12,10 +12,10 @@ function makeGrid() {
   const fragment = document.createDocumentFragment();
 
   // Make the canvas table and add it the document fragment
-  for (var row=0; row < gridWidth; row++) {
+  for (var row=0; row < gridHeight; row++) {
     // Make a table row
     const tableRow = document.createElement('tr');
-    for (var col=0; col <gridHeight; col++) {
+    for (var col=0; col <gridWidth; col++) {
       // Make a table column
       const tableCol = document.createElement('td');
       // Add this table column to the row
