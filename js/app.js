@@ -32,3 +32,8 @@ function makeGrid() {
 // Call the makeGrid() function when the 'Create Canvas' input gets clicked
 const createCanvasInput = document.querySelector('#createCanvasInput');
 createCanvasInput.addEventListener('click', makeGrid);
+
+// When a table cell gets clicked, toggle the background-color class
+document.querySelector('#pixelCanvas').addEventListener('click', function (event) {
+  event.target.classList.toggle('background-color');
+});
